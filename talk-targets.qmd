@@ -127,7 +127,7 @@ targets::tar_visualnetwork()
 
 ::: columns
 ::: {.column width="60%"}
-Figure
+Plot
 
 -   TODO
 :::
