@@ -1,11 +1,155 @@
 ---
-title: "talk-targets"
+title: "Automatic Pipelines with {targets}"
+author: "Anders Askeland"
+format: 
+  revealjs:
+    mermaid:
+      theme: forest
 ---
 
-## Quarto
+## What is a data analysis "pipeline"?
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+::: columns
+::: {.column width="60%"}
+![](images/factory.png)
+:::
 
-```{r}
-1 + 1
+::: {.column width="30%"}
+```{mermaid}
+graph TB
+  clean_data[Clean data&nbsp]
+  subgraph Data
+  raw_data[Raw data&nbsp] -- Function&nbsp --> clean_data
+  end
+  subgraph Analysis
+  clean_data -- Function&nbsp --> output_1[Table]
+  clean_data -- Function&nbsp --> output_2[Figure]
+
+  end
+  subgraph Presentation
+  output_1 --> presentation[Paper]
+  output_2 --> presentation[Paper]
+  end
+  
 ```
+:::
+:::
+
+::: notes
+-   Short introduction - A practical example
+-   Concept
+-   Formal vs non-formal
+  - Non-formal. You manually decide what to re-run
+-   Reproducibility
+:::
+
+## What is {targets}?
+::: columns
+::: {.column width="60%"}
+-   R package
+-   Pipeline tool
+:::
+
+::: {.column width="30%"}
+![](images/targets_logo.svg)
+
+:::
+:::
+
+
+
+::: notes
+-  Formal pipeline tool
+-  What does this mean?
+   - Dependency management
+   - Caching
+   - Visualization of workflows
+- Reproducible, readable, and code-based data analysi
+:::
+
+## Why {targets}?
+::: columns
+::: {.column width="60%"}
+-   First R based pipeline implementation
+-   Demanding computation
+-   Reproducibility
+-   Parallel Computing
+-   And more...
+:::
+
+::: {.column width="30%"}
+![](images/question.png)
+
+:::
+:::
+
+
+
+::: notes
+-  Formal pipeline tool
+-  What does this mean?
+   - Dependency management
+   - Caching
+   - Visualization of workflows
+-  Not only because its cool
+-  
+   
+:::
+
+## How to use {targets}?
+
+
+-   Setup `_targets` file
+
+```{.r}
+targets::use_targets()
+```
+-   Run pipeline
+```{.r}
+targets::tar_make()
+```
+-   Visualize pipeline
+```{.r}
+targets::tar_visualnetwork()
+```
+
+::: notes
+-  Formal pipeline tool
+-  What does this mean?
+   - Dependency management
+   - Caching
+   - Visualization of workflows
+   
+:::
+
+
+## Let's do some coding...
+
+::: columns
+::: {.column width="60%"}
+Figure
+
+-   TODO
+:::
+
+::: {.column width="30%"}
+Table
+
+-   TODO
+:::
+:::
+
+
+::: notes
+-  Setup targets & explain file
+  - A lot of setup
+  - Targets pipeline inside list 
+-  What should we do
+  - Create this presentation into a pipeline
+-  Data
+   - Show pipeline files
+-  Analysis
+   - 
+-  
+:::
+
