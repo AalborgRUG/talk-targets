@@ -22,15 +22,13 @@ graph TB
   raw_data[Raw data&nbsp] -- Function&nbsp --> clean_data
   end
   subgraph Analysis
-  clean_data -- Function&nbsp --> output_1[Table]
-  clean_data -- Function&nbsp --> output_2[Figure]
+  clean_data -- Function&nbsp --> output_1[Analysis</br>table]
+  clean_data -- Function&nbsp --> output_2[Plot]
 
   end
-  subgraph Presentation
-  output_1 --> presentation[Paper]
-  output_2 --> presentation[Paper]
-  end
-  
+  output_1 --> presentation[Manuscript]
+  output_2 --> presentation[Manuscript]
+
 ```
 :::
 :::
@@ -72,8 +70,8 @@ graph TB
 ::: columns
 ::: {.column width="60%" .incremental}
 -   First R based pipeline implementation
--   Demanding computation
 -   Reproducibility
+-   Demanding computation
 -   Parallel Computing
 -   And more...
 :::

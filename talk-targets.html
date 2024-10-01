@@ -423,15 +423,13 @@ Anders Askeland
   raw_data[Raw data&amp;nbsp] -- Function&amp;nbsp --&gt; clean_data
   end
   subgraph Analysis
-  clean_data -- Function&amp;nbsp --&gt; output_1[Table]
-  clean_data -- Function&amp;nbsp --&gt; output_2[Figure]
+  clean_data -- Function&amp;nbsp --&gt; output_1[Analysis&lt;/br&gt;table]
+  clean_data -- Function&amp;nbsp --&gt; output_2[Plot]
 
   end
-  subgraph Presentation
-  output_1 --&gt; presentation[Paper]
-  output_2 --&gt; presentation[Paper]
-  end
-  
+  output_1 --&gt; presentation[Manuscript]
+  output_2 --&gt; presentation[Manuscript]
+
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -502,8 +500,8 @@ Anders Askeland
 <div class="column" style="width:60%;">
 <ul>
 <li class="fragment">First R based pipeline implementation</li>
-<li class="fragment">Demanding computation</li>
 <li class="fragment">Reproducibility</li>
+<li class="fragment">Demanding computation</li>
 <li class="fragment">Parallel Computing</li>
 <li class="fragment">And more…</li>
 </ul>
