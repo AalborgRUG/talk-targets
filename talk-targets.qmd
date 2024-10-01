@@ -7,6 +7,7 @@ format:
       theme: forest
 ---
 
+
 ## What is a data analysis "pipeline"?
 
 ::: columns
@@ -14,8 +15,11 @@ format:
 ![](images/factory.png)
 :::
 
+
+
+
 ::: {.column width="30%"}
-```{mermaid}
+```{mermaid engine='DiagrammeR::mermaid'}
 graph TB
   clean_data[Clean data&nbsp]
   subgraph Data
@@ -128,16 +132,25 @@ graph TB
 ## Let's do some coding...
 
 ::: columns
-::: {.column width="60%"}
+::: {.column width="40%"}
 Plot
+```{r}
+targets::tar_read(plot) 
+```
 
--   TODO
+
 :::
+::: {.column width="60%"}
 
-::: {.column width="30%"}
+
 Analysis
 
--   TODO
+```{r}
+targets::tar_read(analysis) |> 
+knitr::kable()
+```
+
+
 :::
 :::
 
