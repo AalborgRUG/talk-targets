@@ -133,7 +133,7 @@ Plot
 :::
 
 ::: {.column width="30%"}
-Table
+Analysis
 
 -   TODO
 :::
