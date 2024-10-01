@@ -465,8 +465,9 @@ Anders Askeland
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>R package</li>
-<li>Pipeline tool</li>
+<li class="fragment">R package</li>
+<li class="fragment">Pipeline tool</li>
+<li class="fragment">Ecosystem (targetopia)</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <p><img data-src="images/targets_logo.svg"></p>
@@ -500,11 +501,11 @@ Anders Askeland
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>First R based pipeline implementation</li>
-<li>Demanding computation</li>
-<li>Reproducibility</li>
-<li>Parallel Computing</li>
-<li>And more…</li>
+<li class="fragment">First R based pipeline implementation</li>
+<li class="fragment">Demanding computation</li>
+<li class="fragment">Reproducibility</li>
+<li class="fragment">Parallel Computing</li>
+<li class="fragment">And more…</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <p><img data-src="images/question.png"></p>
@@ -536,18 +537,20 @@ Anders Askeland
 </section>
 <section id="how-to-use-targets" class="slide level2">
 <h2>How to use {targets}?</h2>
+<div>
 <ul>
-<li>Setup <code>_targets</code> file</li>
+<li class="fragment">Setup targets (<code>_targets</code> file)</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a>targets<span class="sc">::</span><span class="fu">use_targets</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r incremental number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a>targets<span class="sc">::</span><span class="fu">use_targets</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Run pipeline</li>
+<li class="fragment">Run pipeline</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a>targets<span class="sc">::</span><span class="fu">tar_make</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Visualize pipeline</li>
+<li class="fragment">Visualize pipeline</li>
 </ul>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>targets<span class="sc">::</span><span class="fu">tar_visualnetwork</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <aside class="notes">
 <ul>
 <li>Formal pipeline tool</li>
@@ -574,12 +577,12 @@ Anders Askeland
 <h2>Let’s do some coding…</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p>Figure</p>
+<p>Plot</p>
 <ul>
 <li>TODO</li>
 </ul>
 </div><div class="column" style="width:30%;">
-<p>Table</p>
+<p>Analysis</p>
 <ul>
 <li>TODO</li>
 </ul>

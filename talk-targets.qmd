@@ -45,9 +45,10 @@ graph TB
 
 ## What is {targets}?
 ::: columns
-::: {.column width="60%"}
+::: {.column width="60%" .incremental}
 -   R package
 -   Pipeline tool
+-   Ecosystem (targetopia)
 :::
 
 ::: {.column width="30%"}
@@ -69,7 +70,7 @@ graph TB
 
 ## Why {targets}?
 ::: columns
-::: {.column width="60%"}
+::: {.column width="60%" .incremental}
 -   First R based pipeline implementation
 -   Demanding computation
 -   Reproducibility
@@ -97,21 +98,22 @@ graph TB
 :::
 
 ## How to use {targets}?
+::: {.incremental}
 
+-   Setup targets (`_targets` file)
 
--   Setup `_targets` file
-
-```{.r}
-targets::use_targets()
-```
+  ```{.r .incremental}
+  targets::use_targets()
+  ```
 -   Run pipeline
-```{.r}
-targets::tar_make()
-```
+  ```{.r}
+  targets::tar_make()
+  ```
 -   Visualize pipeline
-```{.r}
-targets::tar_visualnetwork()
-```
+  ```{.r}
+  targets::tar_visualnetwork()
+  ```
+:::
 
 ::: notes
 -  Formal pipeline tool
