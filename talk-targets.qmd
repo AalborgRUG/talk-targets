@@ -34,19 +34,25 @@ graph TB
 :::
 
 ::: notes
--   Short introduction - A practical example
 -   Concept
+    - Car factory
+    - Covid testing
+-   Data analysis pipeline
 -   Formal vs non-formal
-  - Non-formal. You manually decide what to re-run
+  - Non-formal. You manually decide what to re-run. This is what we usually do.
+  - Formal.
 -   Reproducibility
+-   Functional programming - Works very well with this.
 :::
 
 ## What is {targets}?
 ::: columns
 ::: {.column width="60%" .incremental}
--   R package
 -   Pipeline tool
+-   R package
 -   Ecosystem (targetopia)
+
+
 :::
 
 ::: {.column width="30%"}
@@ -59,11 +65,15 @@ graph TB
 
 ::: notes
 -  Formal pipeline tool
--  What does this mean?
+-  What does this mean? - Various systems that helps us
    - Dependency management
    - Caching
    - Visualization of workflows
-- Reproducible, readable, and code-based data analysi
+-  R package
+-  Ecosystem (targetopia)
+   - Tachetypes (complex stuff simplified)
+   - Stan / basiyan statistics
+   - Extend youself
 :::
 
 ## Why {targets}?
@@ -85,14 +95,15 @@ graph TB
 
 
 ::: notes
--  Formal pipeline tool
--  What does this mean?
-   - Dependency management
-   - Caching
-   - Visualization of workflows
--  Not only because its cool
--  
-   
+-  First R based tool
+   - Also Drake. Pipeline tool, but more limited. Same author.
+-  Use cases - Not only because its cool
+  - Main sales pitch - Reproducible, readable, and code-based data analysis
+  - Demanding computation
+  - Parallel computing
+  - More...
+   - Dynamic branching
+
 :::
 
 ## How to use {targets}?
@@ -114,11 +125,7 @@ graph TB
 :::
 
 ::: notes
--  Formal pipeline tool
--  What does this mean?
-   - Dependency management
-   - Caching
-   - Visualization of workflows
+-  Three main functions
    
 :::
 
