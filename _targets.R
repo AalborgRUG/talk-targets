@@ -7,6 +7,12 @@
 library(targets)
 library(tarchetypes) # Load other packages as needed.
 # knitr::knit_engines$set(mermaid = DiagrammeR::mermaid)
+
+# Parallel
+options(clustermq.scheduler = "multiprocess")
+# run with `tar_make_clustermq(workers = 2)`
+
+
 # Set target options:
 tar_option_set(
   packages = c("tibble", "readr", "dplyr") # Packages that your targets need for their tasks.
